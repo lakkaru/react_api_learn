@@ -7,12 +7,17 @@ export default function HomeFunctional() {
   const [bgColor, setBgColor] = useState("teal");
   const [count, setCount] = useState(0);
 
+  useEffect(()=>{
+    setBgColor(getRandomColor());
+  },[count])
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((data) => {
         setUsers(data);
         setIsLoading(false);
+        setBgColor('teal');
       })
       .catch(() => {
         setUsers([]);
