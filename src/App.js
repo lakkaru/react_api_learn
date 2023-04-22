@@ -1,10 +1,14 @@
 import './App.css';
-import HomeClass from './layouts/HomeClass';
+import HomeClass from './classBasedProject/HomeClass';
+import HomeFunctional from './functionalProject/HomeFunctional';
+
 
 function App() {
   return (
     <div className="App">
       <HomeClass/>
+      <hr/>
+      <HomeFunctional/>
     </div>
   );
 }
