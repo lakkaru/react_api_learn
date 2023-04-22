@@ -1,13 +1,13 @@
 import './App.css';
-import HomeClass from './classBasedProject/HomeClass';
+// import HomeClass from './classBasedProject/HomeClass';
 import HomeFunctional from './functionalProject/HomeFunctional';
 
 
 function App() {
   return (
     <div className="App">
-      <HomeClass/>
-      <hr/>
+      {/* <HomeClass/> */}
+      {/* <hr/> */}
       <HomeFunctional/>
     </div>
   );
